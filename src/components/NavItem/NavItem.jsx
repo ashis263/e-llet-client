@@ -5,7 +5,7 @@ const NavItem = ({item}) => {
   return (
     <NavLink
       className="flex gap-2 items-center"
-      style={({ isActive }) => ({ color: isActive ? "teal" : "black", fontWeight: isActive ? "bold" : "normal" })}
+      style={({ isActive }) => ({ color: isActive ? "#B2DFDB" : "black", fontWeight: isActive ? "bold" : "normal" })}
       to={link}
     >
       <Icon sx={{ width: 30 }} />

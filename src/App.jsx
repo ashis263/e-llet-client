@@ -15,7 +15,9 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <div className="flex font-roboto justify-between ">
         <Sidebar />
-        <Outlet className="w-4/5"/>
+        <div className="absolute right-0 w-4/5">
+          <Outlet/>
+        </div>
       </div>
       <div className="fixed bottom-10 flex justify-center left-[50vw] w-1/5">
         <Button
