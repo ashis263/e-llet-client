@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
-import { Button, createTheme, ThemeProvider } from "@mui/material";
 import { teal } from "@mui/material/colors";
-import AddCircleIcon from "@mui/icons-material/AddCircle";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 const theme = createTheme({
   palette: {
@@ -18,15 +17,6 @@ const App = () => {
         <div className="absolute right-0 w-4/5">
           <Outlet/>
         </div>
-      </div>
-      <div className="fixed bottom-10 flex justify-center left-[50vw] w-1/5">
-        <Button
-          className="p-5! font-semibold! flex items-center gap-2"
-          variant="contained"
-        >
-          <span className="pt-0.5">Add Transaction</span>
-          <AddCircleIcon/>
-        </Button>
       </div>
     </ThemeProvider>
   );
