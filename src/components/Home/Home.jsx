@@ -1,6 +1,7 @@
 import Balance from "../Balance/Balance";
 import IncomeExpenseCard from "../IncomeExpenseCard/IncomeExpenseCard";
 import MonthSelect from "../MonthSelect/MonthSelect";
+import Transaction from "../Transaction/Transaction";
 import TypeSelect from "../TypeSelect/TypeSelect";
 
 const Home = () => {
@@ -20,9 +21,18 @@ const Home = () => {
             <IncomeExpenseCard type="income" />
             <IncomeExpenseCard type="expense" />
           </div>
-          <p className="py-2 px-1">Cashflow: 1000 BDT</p>
-          <hr className="text-gray-500" />
+          <p className="pt-2">Cashflow: 1000 BDT</p>
+          <hr className="text-gray-500 my-3" />
         </div>
+      </div>
+      <div className="space-y-2">
+        <div className="flex justify-between items-center">
+          <h5 className="text-xl">4 November 2025</h5>
+          <p className="text-gray-600">1000 BDT</p>
+        </div>
+        <div className="space-y-2"></div>
+        <Transaction type="income" />
+        <Transaction type="expense" />
       </div>
     </div>
   );
