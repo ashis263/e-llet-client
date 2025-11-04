@@ -13,7 +13,7 @@ const Transaction = ({ type }) => {
           ? "border-green-500 bg-green-200 text-green-700"
           : "border-red-500 bg-red-200 text-red-700"
       } border px-2 flex items-center rounded-4xl`}>
-          {type === "income" ? <LuArrowUpFromLine /> : <LuArrowDownToLine />}
+          {type === "income" ? <LuArrowDownToLine /> : <LuArrowUpFromLine />}
         </div>
       </div>
       <h3 className="text-2xl font-bold pl-1">Title</h3>
