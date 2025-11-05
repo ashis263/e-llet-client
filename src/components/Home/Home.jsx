@@ -3,8 +3,7 @@ import IncomeExpenseCard from "../IncomeExpenseCard/IncomeExpenseCard";
 import MonthSelect from "../MonthSelect/MonthSelect";
 import Transaction from "../Transaction/Transaction";
 import TypeSelect from "../TypeSelect/TypeSelect";
-import { Button } from "@mui/material";
-import AddCircleIcon from "@mui/icons-material/AddCircle";
+import AddButton from "../AddButton/AddButton";
 
 const Home = () => {
   return (
@@ -36,15 +35,7 @@ const Home = () => {
         <Transaction type="income" />
         <Transaction type="expense" />
       </div>
-      <div className="fixed bottom-10 flex justify-center left-[50vw] w-1/5">
-        <Button
-          className="p-5! font-semibold! flex items-center gap-2 rounded-lg!"
-          variant="contained"
-        >
-          <span className="pt-0.5">Add Transaction</span>
-          <AddCircleIcon/>
-        </Button>
-      </div>
+      <AddButton label="Add Transaction"/>
     </div>
   );
 };
