@@ -10,7 +10,16 @@ const Categories = () => {
         <CategoriesSort />
       </div>
       <TextField fullWidth id="outlined-basic" label="Search Category" variant="outlined" sx={{borderRadius: "100px"}} />
-      <div className="my-10 space-y-10">
+      <div className="my-10 space-y-10 grid grid-cols-2 md:gap-x-5">
+        <CategoryItem/>
+        <CategoryItem/>
+        <CategoryItem/>
+        <CategoryItem/>
+        <CategoryItem/>
+        <CategoryItem/>
+        <CategoryItem/>
+        <CategoryItem/>
+        <CategoryItem/>
         <CategoryItem/>
       </div>
     </div>

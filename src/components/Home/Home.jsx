@@ -31,11 +31,16 @@ const Home = () => {
           <h5 className="text-xl">4 November 2025</h5>
           <p className="text-gray-600">1000 BDT</p>
         </div>
-        <div className="space-y-2"></div>
-        <Transaction type="income" />
-        <Transaction type="expense" />
+        <div className="grid md:grid-cols-2 gap-5">
+          <Transaction type="income" />
+          <Transaction type="expense" />
+          <Transaction type="income" />
+          <Transaction type="expense" />
+          <Transaction type="income" />
+          <Transaction type="expense" />
+        </div>
       </div>
-      <AddButton label="Add Transaction"/>
+      <AddButton label="Add Transaction" />
     </div>
   );
 };
